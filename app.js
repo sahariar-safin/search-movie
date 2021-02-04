@@ -11,7 +11,7 @@ function handleSearch() {
     })
         .then(res => res.json())
         .then(data => {
-            console.log(data.titles);
+            console.log(data);
             const box = document.getElementById('box');
             for (let i = 0; i < data.titles.length; i++) {
                 const element = data.titles[i];
